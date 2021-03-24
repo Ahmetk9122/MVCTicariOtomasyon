@@ -1,0 +1,4 @@
+﻿/*
+ ICollections Sınıfı bakılacak
+ 
+ */
