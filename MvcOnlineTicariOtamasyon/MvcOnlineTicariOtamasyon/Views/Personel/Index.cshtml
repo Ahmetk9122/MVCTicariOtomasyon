@@ -4,14 +4,23 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
-
+<br />
+<div>
+    <div style="float:right;padding-left:5px;">
+        <a href="/Personel/PersonelEkle" class="btn btn-info" style="width:250px;">Personel Ekle</a>
+    </div>
+    <div  style="float:right">
+        <a href="/Personel/PersonelListe" class="btn btn-outline-dark"  style="width:250px;">Personel Detay Görüntüle</a>
+    </div>
+</div >
+<br />
 <table class="table table-bordered" style="margin-top:20px;">
 
     <tr>
         <th>ID</th>
         <th>Adı</th>
         <th>Soyad</th>
-        <th>Görsel</th>
+        <th>Personel No</th>
         <th>Departman</th>
         <th>Güncelle</th>
         <th>Satışlar</th>
@@ -29,12 +38,12 @@
         @k.PersonelSoyad
     </td>
     <td>
-        @k.PersonelGorsel
+        @k.PersonelNo
     </td>
     <td>
         @k.departman.DepartmanAd
     </td>
-    
+
     <td><a href="/Personel/PersonelGetir/@k.Personelid" class="btn btn-warning">Güncelle</a></td>
     <td><a href="/Departman/DepartmanPersonelSatis/@k.Personelid" class="btn btn-default" style="background-color:lightcoral;color:white">Detaylar</a></td>
 </tr>
@@ -43,5 +52,4 @@
     }
 
 </table>
-<a href="/Personel/PersonelEkle" class="btn btn-info">Personel Ekle</a>
 

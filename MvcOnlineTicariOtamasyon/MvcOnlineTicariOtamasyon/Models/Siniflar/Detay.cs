@@ -9,8 +9,8 @@ namespace MvcOnlineTicariOtamasyon.Models.Siniflar
 {
     public class Detay
     {
-          [KEY]       
-          public int DetayID { get; set; }
+        [KEY]
+        public int DetayID { get; set; }
 
         [Column(TypeName = "Varchar")]
         [StringLength(30)]

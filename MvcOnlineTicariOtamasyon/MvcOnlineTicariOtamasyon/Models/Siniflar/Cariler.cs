@@ -28,7 +28,23 @@ namespace MvcOnlineTicariOtamasyon.Models.Siniflar
          [Required(ErrorMessage ="Bu alanı boş geçemezsiniz.")]
         public string CariMail { get; set; }
 
-        public bool Durum { get; set; }
+        [Column(TypeName = "Varchar")]
+        [StringLength(30)]
+        public string CariNo { get; set; }
+
+        [Column(TypeName = "Varchar")]
+        [StringLength(30)]
+        public string CariAbout { get; set; }
+
+        [Column(TypeName = "Varchar")]
+        [StringLength(250)]
+        public string CariGorsel { get; set; }
+
+        [Column(TypeName = "Varchar")]
+        [StringLength(20)]
+        public string CarsiSifre { get; set; }
+
+        public bool Durum { get; set; } = true;
         public ICollection<SatisHareket> SatisHarekets { get; set; }
         // public string CariUnvan { get; set; }
     }

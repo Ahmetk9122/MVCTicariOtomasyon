@@ -60,5 +60,13 @@ namespace MvcOnlineTicariOtamasyon.Controllers
             c.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult Dinamik ()
+        {
+            Class2 cs = new Class2();
+            cs.deger1 = c.Faturalars.ToList();
+            cs.deger2 = c.FaturaKalems.ToList();
+            return View(cs);
+
+        }
     }
 }

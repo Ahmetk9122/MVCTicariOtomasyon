@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 using MvcOnlineTicariOtamasyon.Models.Siniflar;
+using PagedList;
+using PagedList.Mvc;
 
 namespace MvcOnlineTicariOtamasyon.Controllers
 {
@@ -11,9 +14,9 @@ namespace MvcOnlineTicariOtamasyon.Controllers
     {
         // GET: Kategori
         Context c = new Context();
-        public ActionResult Index()
+        public ActionResult Index(int sayfa = 1)
         {
-            var degerler = c.Kategoris.ToList();
+            var degerler = c.Kategoris.ToList().ToPagedList(sayfa,4);
             return View(degerler);
         }
         [HttpGet]
@@ -46,7 +49,30 @@ namespace MvcOnlineTicariOtamasyon.Controllers
             ktgr.KategoriAD = k.KategoriAD;
             c.SaveChanges();
             return RedirectToAction("Index");
+            Thread.Sleep(500000);
         }
+        public ActionResult Deneme()
+        {
+            Class3 cs =new Class3();
+            cs.Kategoriler = new SelectList(c.Kategoris, "KategoriID", "Kategoriad");
+            cs.Urunler = new SelectList(c.Uruns, "Urunid", "UrunAd");
+            return View(cs);
 
+        }
+        public JsonResult UrunGetir(int p)
+        {
+            var urunlistesi = (from x in c.Uruns
+                               join y in c.Kategoris
+                               on x.Kategori.KategoriID equals y.KategoriID
+                               where x.Kategori.KategoriID == p
+                               select new
+                               {
+                                   
+                                   Text = x.UrunAd,
+                                   Value = x.Urunid.ToString()
+                               }).ToList();
+            return Json(urunlistesi,JsonRequestBehavior.AllowGet);
+        }
     }
+    
 }

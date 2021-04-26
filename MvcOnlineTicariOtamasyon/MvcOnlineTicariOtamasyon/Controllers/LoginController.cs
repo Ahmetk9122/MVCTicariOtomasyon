@@ -8,6 +8,7 @@ using System.Web.Security;
 
 namespace MvcOnlineTicariOtamasyon.Controllers
 {
+    [AllowAnonymous]
     public class LoginController : Controller
     {
         // GET: Login
@@ -26,7 +27,7 @@ namespace MvcOnlineTicariOtamasyon.Controllers
         {
             c.Carilers.Add(p);
             c.SaveChanges();
-            return PartialView(); 
+            return PartialView();
         }
         [HttpGet]
         public ActionResult CariLogin1()
@@ -37,35 +38,35 @@ namespace MvcOnlineTicariOtamasyon.Controllers
         public ActionResult CariLogin1(Cariler p)
         {
             var bilgiler = c.Carilers.FirstOrDefault(x => x.CariMail == p.CariMail && x.CarsiSifre == p.CarsiSifre);
-            if(bilgiler !=null)
+            if (bilgiler != null)
             {
                 FormsAuthentication.SetAuthCookie(bilgiler.CariMail, false);
                 Session["CariMail"] = bilgiler.CariMail.ToString();
                 return RedirectToAction("Index", "CariPanel");
             }
-            return RedirectToAction("Index","Login");
+            return RedirectToAction("Index", "Login");
         }
         [HttpGet]
         public ActionResult AdminLogin()
         {
-            return View(); 
+            return View();
         }
         [HttpPost]
         public ActionResult AdminLogin(Admin p)
         {
             var bilgiler = c.Admins.FirstOrDefault(x => x.KullaniciAd == p.KullaniciAd && x.Sifre == p.Sifre);
-            if(bilgiler !=null)
+            if (bilgiler != null)
             {
                 FormsAuthentication.SetAuthCookie(bilgiler.KullaniciAd, false);
                 Session["KullaniciAd"] = bilgiler.KullaniciAd.ToString();
                 //Admin Giriş yaptığında nereden sayfanın açıldığını göreceğiz.
-                return RedirectToAction("Index", "Kategori");
+                return RedirectToAction("Index", "AnaSayfa");
             }
-             else
+            else
             {
                 return RedirectToAction("Index", "Login");
             }
-            
+
         }
     }
 }

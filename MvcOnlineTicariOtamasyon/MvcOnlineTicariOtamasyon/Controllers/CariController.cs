@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 using MvcOnlineTicariOtamasyon.Models.Siniflar;
 
 namespace MvcOnlineTicariOtamasyon.Controllers
@@ -54,6 +55,10 @@ namespace MvcOnlineTicariOtamasyon.Controllers
             cari.CariSoyad = p.CariSoyad;
             cari.CariSehir = p.CariSehir;
             cari.CariMail = p.CariMail;
+            cari.CariNo = p.CariNo;
+            cari.CariAbout = p.CariAbout;
+            cari.CariGorsel = p.CariGorsel;
+            cari.CarsiSifre = p.CarsiSifre;
             c.SaveChanges();
             return RedirectToAction("Index");
         }
@@ -64,6 +69,17 @@ namespace MvcOnlineTicariOtamasyon.Controllers
             ViewBag.cari = cr;
             return View(degerler);
 
+        }
+        public ActionResult CariListe()
+        {
+            var sorgu = c.Carilers.ToList();
+            return View(sorgu);
+        }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            Session.Abandon();
+            return RedirectToAction("Index", "Login");
         }
     }
 }

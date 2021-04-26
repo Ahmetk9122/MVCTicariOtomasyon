@@ -23,188 +23,249 @@
 </head>
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
-        
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <div class="container-fluid">
-                    <div class="row mb-2">
-                        <div class="col-sm-6">
-                            <h1>Hızlı Bakış Tabloları</h1>
-                        </div>
 
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <div class="container-fluid">
+                <div class="row mb-2">
+                    <div class="col-sm-6">
+                        <h1>Hızlı Bakış Tabloları</h1>
                     </div>
-                </div><!-- /.container-fluid -->
-            </section>
 
-            <!-- Main content -->
-            <section class="content">
-                <div class="container-fluid">
-                    <div class="row">
+                </div>
+            </div><!-- /.container-fluid -->
+        </section>
+
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">DOLAR-TÜRK LİRASI</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <!-- TradingView Widget BEGIN -->
+                            <!-- TradingView Widget BEGIN -->
+                            <div class="tradingview-widget-container">
+                                <div class="tradingview-widget-container__widget"></div>
+                                <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com/symbols/USDTRY/technicals/" rel="noopener" target="_blank"><span class="blue-text"> USDTRY sembolü için Teknik Analiz</span></a></div>
+                                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                                    {
+                                        "interval": "1M",
+                                            "width": "100%",
+                                                "isTransparent": false,
+                                                    "height": "600",
+                                                        "symbol": "FX:USDTRY",
+                                                            "showIntervalTabs": true,
+                                                                "locale": "tr",
+                                                                    "colorTheme": "dark"
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                        <!-- /.card -->
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+                    
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">Kategori Tablosu</h3>
+                                    <h3 class="card-title">EURO-TÜRK LİRASI</h3>
                                 </div>
-                                <!-- /.card-header -->
-                                <div class="card-body">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 10px">#</th>
-                                                <th>Kategori</th>
-                                                <th>Progress Bar</th>
-                                                <th style="width: 40px">Oran</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1.</td>
-                                                <td>Beyaz Eşya</td>
-                                                <td>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge bg-danger">55%</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2.</td>
-                                                <td>Küçük Ev Aletleri</td>
-                                                <td>
-                                                    <div class="progress progress-xs">
-                                                        <div class="progress-bar bg-warning" style="width: 70%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge bg-warning">70%</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3.</td>
-                                                <td>Bilgisayar</td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped active">
-                                                        <div class="progress-bar bg-primary" style="width: 30%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge bg-primary">30%</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>4.</td>
-                                                <td>Mobilya</td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped active">
-                                                        <div class="progress-bar bg-success" style="width: 90%"></div>
-                                                    </div>
-                                                </td>
-                                                <td><span class="badge bg-success">90%</span></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <!-- TradingView Widget BEGIN -->
+                                <div class="tradingview-widget-container">
+                                    <div class="tradingview-widget-container__widget"></div>
+                                    <div class="tradingview-widget-copyright"><a href="https://tr.tradingview.com/symbols/EURTRY/technicals/" rel="noopener" target="_blank"><span class="blue-text"> EURTRY sembolü için Teknik Analiz</span></a></div>
+                                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+                                        {
+                                            "interval": "1M",
+                                                "width": "100%",
+                                                    "isTransparent": false,
+                                                        "height": "600",
+                                                            "symbol": "FX:EURTRY",
+                                                                "showIntervalTabs": true,
+                                                                    "locale": "tr",
+                                                                        "colorTheme": "dark"
+                                        }
+                                    </script>
                                 </div>
-                                <!-- /.card-body -->
-
+                                <!-- TradingView Widget END -->
                             </div>
                             <!-- /.card -->
-                            <br />
-                            @Html.Action("Partial1", "istatistik")
-
                             <!-- /.card -->
                         </div>
-                        <!-- /.col -->
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Müşteri Şehir Tablosu</h3>
+                    
+                    <!-- /.col -->
 
+                </div>
 
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body p-0">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th style="width: 10px">#</th>
-                                                <th>Şehir</th>
-                                                <th>Progress Bar</th>
-                                                <th style="width: 40px">Ader</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            @{ int sirano = 0;}
-                                            @foreach (var x in Model)
-                                            {
+            </div>
+        </section>
 
-
-                                                <tr>
-                                                    <td>@{sirano++;} @sirano</td>
-                                                    <td>@x.Sehir</td>
-                                                    <td>
-                                                        @if (x.Sayi == 1)
-                                                        {
-                                                            <div class="progress progress-xs">
-                                                                <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
-                                                            </div>
-                                                        }
-                                                        @if (x.Sayi == 2)
-                                                        {
-                                                            <div class="progress progress-xs">
-                                                                <div class="progress-bar bg-warning" style="width: 70%"></div>
-                                                            </div>
-                                                        }
-
-                                                        @if (x.Sayi == 3)
-                                                        {
-                                                            <div class="progress progress-xs progress-striped active">
-                                                                <div class="progress-bar bg-success" style="width: 90%"></div>
-                                                            </div>
-                                                        }
-                                                    </td>
-                                                    <td>
-                                                        @if (x.Sayi == 1)
-                                                        {
-                                                            <span class="badge bg-danger">@x.Sayi</span>
-                                                        }
-                                                        @if (x.Sayi == 2)
-                                                        {
-                                                            <span class="badge bg-warning">@x.Sayi</span>
-                                                        }
-                                                        @if (x.Sayi == 3)
-                                                        {
-                                                            <span class="badge bg-success">@x.Sayi</span>
-                                                        }
-                                                    </td>
-
-                                                </tr>
-                                            }
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!-- /.card-body -->
+        <!-- Main content -->
+        <section class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Kategori Tablosu</h3>
                             </div>
-                            <!-- /.card -->
-                            @Html.Action("Partial4", "istatistik")
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>Kategori</th>
+                                            <th>Progress Bar</th>
+                                            <th style="width: 40px">Oran</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1.</td>
+                                            <td>Beyaz Eşya</td>
+                                            <td>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-danger">55%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2.</td>
+                                            <td>Küçük Ev Aletleri</td>
+                                            <td>
+                                                <div class="progress progress-xs">
+                                                    <div class="progress-bar bg-warning" style="width: 70%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-warning">70%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3.</td>
+                                            <td>Bilgisayar</td>
+                                            <td>
+                                                <div class="progress progress-xs progress-striped active">
+                                                    <div class="progress-bar bg-primary" style="width: 30%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-primary">30%</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4.</td>
+                                            <td>Mobilya</td>
+                                            <td>
+                                                <div class="progress progress-xs progress-striped active">
+                                                    <div class="progress-bar bg-success" style="width: 90%"></div>
+                                                </div>
+                                            </td>
+                                            <td><span class="badge bg-success">90%</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
 
-                            <!-- /.card -->
                         </div>
-                        <!-- /.col -->
+                        <!-- /.card -->
+                        <br />
+                        @Html.Action("Partial1", "istatistik")
+                        <br />
+
+                        <!-- /.card -->
                     </div>
-                    <!-- /.row -->
-                    @Html.Action("Partial2", "istatistik")
-                    <!-- /.row -->
-                    @Html.Action("Partial3", "istatistik")
-                    <!-- /.row -->
-                </div><!-- /.container-fluid -->
-            </section>
-            <!-- /.content -->
-        </div>
-        <!-- /.content-wrapper -->
-    
+                    <!-- /.col -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Müşteri Şehir Tablosu</h3>
 
-        <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
-        </aside>
-        <!-- /.control-sidebar -->
-    
+
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body p-0">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10px">#</th>
+                                            <th>Şehir</th>
+                                            <th>Progress Bar</th>
+                                            <th style="width: 40px">Ader</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @{ int sirano = 0;}
+                                        @foreach (var x in Model)
+                                        {
+
+
+                            <tr>
+                                <td>@{sirano++;} @sirano</td>
+                                <td>@x.Sehir</td>
+                                <td>
+                                    @if (x.Sayi == 1)
+                                    {
+                    <div class="progress progress-xs">
+                        <div class="progress-bar progress-bar-danger" style="width: 55%"></div>
+                    </div>}
+                                    @if (x.Sayi == 2)
+                                    {
+                    <div class="progress progress-xs">
+                        <div class="progress-bar bg-warning" style="width: 70%"></div>
+                    </div>}
+
+                                    @if (x.Sayi == 3)
+                                    {
+                    <div class="progress progress-xs progress-striped active">
+                        <div class="progress-bar bg-success" style="width: 90%"></div>
+                    </div>}
+                                </td>
+                                <td>
+                                    @if (x.Sayi == 1)
+                                    {
+                    <span class="badge bg-danger">@x.Sayi</span>}
+                                    @if (x.Sayi == 2)
+                                    {
+                    <span class="badge bg-warning">@x.Sayi</span>}
+                                    @if (x.Sayi == 3)
+                                    {
+                    <span class="badge bg-success">@x.Sayi</span>}
+                                </td>
+
+                            </tr>
+}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                        @Html.Action("Partial4", "istatistik")
+
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+
+                </div>
+                <!-- /.row -->
+                @Html.Action("Partial2", "istatistik")
+                <!-- /.row -->
+                @Html.Action("Partial3", "istatistik")
+                <!-- /.row -->
+            </div><!-- /.container-fluid -->
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
     <!-- ./wrapper -->
     <!-- jQuery -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -214,6 +275,8 @@
     <script src="../../dist/js/adminlte.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="../../dist/js/demo.js"></script>
+
 </body>
+
 </html>
 

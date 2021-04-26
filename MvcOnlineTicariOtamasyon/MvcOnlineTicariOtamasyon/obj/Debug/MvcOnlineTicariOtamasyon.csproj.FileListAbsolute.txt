@@ -84,3 +84,9 @@ C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\bi
 C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\obj\Debug\MvcOnlineTicariOtamasyon.Migrations.asd.resources
 C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\obj\Debug\MvcOnlineTicariOtamasyon.csproj.GenerateResource.cache
 C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\obj\Debug\MvcOnlineTicariOtamasyon.Migrations.faturass.resources
+C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\bin\PagedList.dll
+C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\bin\PagedList.Mvc.dll
+C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\bin\PagedList.xml
+C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\bin\PagedList.Mvc.xml
+C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\obj\Debug\MvcOnlineTicariOtamasyon.Migrations.denemekargo1.resources
+C:\Users\ahmet\source\repos\MvcOnlineTicariOtamasyon\MvcOnlineTicariOtamasyon\bin\QRCoder.dll

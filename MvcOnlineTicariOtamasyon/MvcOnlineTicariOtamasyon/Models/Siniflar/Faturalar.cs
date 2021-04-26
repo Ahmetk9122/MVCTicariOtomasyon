@@ -36,6 +36,8 @@ namespace MvcOnlineTicariOtamasyon.Models.Siniflar
         public String TeslimAlan { get; set; }
 
         public decimal Toplam { get; set; }
+
+        public DateTime Tarih { get; set; }
         public ICollection<FaturaKalem> FaturaKalems { get; set; }
     }
 }

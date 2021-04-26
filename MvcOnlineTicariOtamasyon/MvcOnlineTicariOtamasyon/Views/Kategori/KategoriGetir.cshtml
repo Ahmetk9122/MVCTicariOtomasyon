@@ -9,7 +9,7 @@
 @using (Html.BeginForm("KategoriGuncelle", "Kategori", FormMethod.Post))
 {
     <div class="form-group">
-        @Html.LabelFor(x => x.KategoriAD)
+        <p>Kategori AD</p>
         @Html.TextBoxFor(x => x.KategoriAD, new { @class = "form-control" })
         @Html.HiddenFor(x=>x.KategoriID)
     </div>

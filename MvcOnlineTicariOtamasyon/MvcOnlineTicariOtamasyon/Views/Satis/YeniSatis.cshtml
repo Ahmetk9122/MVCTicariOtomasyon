@@ -8,6 +8,7 @@
 <h2>Yeni Satış Sayfası</h2>
 <form method="post" class="form-group">
 
+
     @Html.LabelFor(x => x.Urun)
     @Html.DropDownListFor(x => x.Urunid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
     <br />

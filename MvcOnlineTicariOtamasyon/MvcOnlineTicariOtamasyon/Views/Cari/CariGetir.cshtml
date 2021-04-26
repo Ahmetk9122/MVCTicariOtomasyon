@@ -27,6 +27,22 @@
     @Html.TextBoxFor(x => x.CariMail, new { @class = "form-control" })
     @Html.ValidationMessageFor(x => x.CariMail, "", new { @style = "color:red" })
     <br />
+    <p>Cari No</p>
+    @Html.TextBoxFor(x => x.CariNo, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CariNo, "", new { @style = "color:red" })
+    <br />
+    <p>Cari Hakkında</p>
+    @Html.TextBoxFor(x => x.CariAbout, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CariAbout, "", new { @style = "color:red" })
+    <br />
+    <p>Cari Görsel</p>
+    @Html.TextBoxFor(x => x.CariGorsel, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CariGorsel, "", new { @style = "color:red" })
+    <br />
+    <p>Cari Şifre</p>
+    @Html.TextBoxFor(x => x.CarsiSifre, new { @class = "form-control" })
+    @Html.ValidationMessageFor(x => x.CarsiSifre, "", new { @style = "color:red" })
+    <br />
     <button class="btn btn-default" style="background-color:yellowgreen">Güncelle </button>
 </div>    
 }

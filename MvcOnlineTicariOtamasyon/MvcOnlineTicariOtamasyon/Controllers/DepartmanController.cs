@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using MvcOnlineTicariOtamasyon.Models.Siniflar;
 namespace MvcOnlineTicariOtamasyon.Controllers
 {
+    [Authorize]
     public class DepartmanController : Controller
     {
         // GET: Departman
@@ -16,6 +17,7 @@ namespace MvcOnlineTicariOtamasyon.Controllers
             return View(degerler);
         }
         [HttpGet]
+        [Authorize(Roles ="A")]
         public ActionResult DepartmanEkle()
         {
             return View();
