@@ -10,7 +10,7 @@
 { 
     //id kullanıyoruz tanımlasın diye null göndermesin diye
     @Html.HiddenFor(x=>x.Urunid)
-    @Html.LabelFor(x => x.UrunAd)
+    <p>Ürün Ad</p>
     @Html.TextBoxFor(x => x.UrunAd, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.Marka)
@@ -19,17 +19,17 @@
     @Html.LabelFor(x => x.Stok)
     @Html.TextBoxFor(x => x.Stok, new { @class = "form-control" })
     <br />
-    @Html.LabelFor(x => x.AlisFiyat)
+    <p>Alış Fiyatı</p>
     @Html.TextBoxFor(x => x.AlisFiyat, new { @class = "form-control" })
     <br />
-    @Html.LabelFor(x => x.SatisFiyat)
+    <p>Satış Fiyatı</p>
     @Html.TextBoxFor(x => x.SatisFiyat, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.Kategori)
     @Html.DropDownListFor(x => x.Kategoriid, (List<SelectListItem>)ViewBag.dgr1, new { @class = "form-control" })
     @*@Html.TextBoxFor(x => x.Kategoriid, new { @class = "form-control" })*@
     <br />
-    @Html.LabelFor(x => x.UrunGorsel)
+    <p>Ürün Görseli</p>
     @Html.TextBoxFor(x => x.UrunGorsel, new { @class = "form-control" })
     <br />
     @Html.LabelFor(x => x.Durum)
